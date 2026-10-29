@@ -1,0 +1,5 @@
+# The macro processor autoconf and bison run.
+build-requires pos-link
+requires glibc
+archive https://ftp.gnu.org/gnu/m4/m4-1.4.21.tar.xz f25c6ab51548a73a75558742fb031e0625d6485fe5f9155949d6486a2408ab66
+version 1.4.21

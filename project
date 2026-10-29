@@ -2,5 +2,11 @@
 # name: names the project's settings (pos-extras.conf), tools images and
 # containers, and recipes archive.
 name pos-extras
+# pipeline: the pipeline of the project's packages and builds, the
+# extras' (the engine's BUILD.md "Extras").
+pipeline extras
+# prefix: where the packages install; <version> is <product
+# version>.<revision> of VERSION (the engine's BUILD.md "Prefix").
+prefix /apps/pos-extras/<version>
 # engine: the pos commit whose buildsys/ ./build runs.
-engine c27501221ca213fd95dd10159b5454da93255f53
+engine 488935e5c717f666930e5a3dc0ca6e06fabd9ecf
