@@ -7,6 +7,9 @@
 # of the libstdc++ directories, gcc drops the later duplicate, and
 # libstdc++'s #include_next <stdlib.h> then finds nothing after itself.
 #
+# -rpath into the prefix, so programs a build runs before it installs
+# them (python's module import check) find the extras libraries; the
+# finish step turns it into $ORIGIN-relative entries, or drops it.
 # No -rpath into /pos: the POS loader finds /pos/lib by itself. Its cache
 # is /etc/pos/ld.so.cache, not the build container's /etc/ld.so.cache
 # (pos's BUILD.md "Core libs stage").
@@ -15,7 +18,7 @@
 # Config cc, the libtool script), which must not name one sdk's path.
 export PATH="${prefix}/bin:${sdk_prefix}/bin:$PATH"
 export CPPFLAGS="-I${prefix}/include${CPPFLAGS:+ $CPPFLAGS}"
-export LDFLAGS="-L${prefix}/lib -L/pos/lib -Wl,--dynamic-linker=/pos/lib/ld-linux-x86-64.so.2${LDFLAGS:+ $LDFLAGS}"
+export LDFLAGS="-L${prefix}/lib -Wl,-rpath,${prefix}/lib -L/pos/lib -Wl,--dynamic-linker=/pos/lib/ld-linux-x86-64.so.2${LDFLAGS:+ $LDFLAGS}"
 # Replace the host search path so .pc files cannot fall back to /usr.
 export PKG_CONFIG_LIBDIR=${prefix}/lib/pkgconfig:/pos/lib/pkgconfig
 unset PKG_CONFIG_PATH
