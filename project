@@ -9,4 +9,4 @@ pipeline extras
 # version>.<revision> of VERSION (the engine's BUILD.md "Prefix").
 prefix /apps/pos-extras/<version>
 # engine: the pos commit whose buildsys/ ./build runs.
-engine 488935e5c717f666930e5a3dc0ca6e06fabd9ecf
+engine 0ceac5ebc1d05c8ad97a8f4e8de477cbe26f1b08
