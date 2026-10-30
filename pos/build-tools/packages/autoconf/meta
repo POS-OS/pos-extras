@@ -1,0 +1,6 @@
+# autoconf, autoheader, autom4te, autoreconf: perl scripts running the
+# extras' m4 and perl (both found at configure, the versioned paths).
+build-requires pos-link m4 perl
+requires m4 perl
+archive https://ftp.gnu.org/gnu/autoconf/autoconf-2.73.tar.xz 9fd672b1c8425fac2fa67fa0477b990987268b90ff36d5f016dae57be0d6b52e
+version 2.73

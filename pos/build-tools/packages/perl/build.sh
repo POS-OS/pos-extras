@@ -1,6 +1,6 @@
-# Configure, not autoconf, in the source tree, with the sdk's compiler
-# first on PATH: Config records cc as the plain gcc, which XS modules
-# built later run, not this sdk's path. Library and header search
+# Configure, not autoconf, in the source tree, with the plain gcc (the
+# sdk's, pos-link's PATH): Config records cc, which XS modules built
+# later run, so not this sdk's path. Library and header search
 # is limited to the build's prefix and /pos: Configure probes /usr/lib
 # and /usr/local otherwise, the build container's Fedora (an empty -D is
 # ignored, a blank one is not). Threads as
@@ -11,7 +11,6 @@
 # build's own.
 pkg() {
   pkg_sync_src
-  export PATH="${sdk_prefix}/bin:$PATH"
   sh Configure -des \
     -Dprefix="$prefix" \
     -Dvendorprefix="$prefix" \
