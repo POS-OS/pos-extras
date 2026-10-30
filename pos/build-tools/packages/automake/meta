@@ -1,0 +1,5 @@
+# automake and aclocal: perl scripts; they run autoconf (autom4te).
+build-requires pos-link perl autoconf
+requires perl autoconf
+archive https://ftp.gnu.org/gnu/automake/automake-1.19.tar.xz e3e2c2e3abf37898138db5b6c1d1dc35c9160c5978be7947d2c741705251d445
+version 1.19
