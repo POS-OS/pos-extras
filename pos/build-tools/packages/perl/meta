@@ -1,0 +1,7 @@
+# Perl. autoconf, automake, libtool's tools, texinfo, help2man and the kernel
+# build run it. libperl is shared (lib/perl5/<version>/<arch>/CORE), found
+# through the runpath.
+build-requires pos-link
+requires glibc libxcrypt zlib
+archive https://www.cpan.org/src/5.0/perl-5.44.0.tar.xz 505cf43912e9480495c344c70260452e32aa2a73c546a026b3f100053b23ce91
+version 5.44.0
