@@ -1,0 +1,5 @@
+# Perfect hash function generator (C++, links libstdc++).
+build-requires pos-link
+requires glibc gcc-runtime
+archive https://ftp.gnu.org/gnu/gperf/gperf-3.3.tar.gz fd87e0aba7e43ae054837afd6cd4db03a3f2693deb3619085e6ed9d8d9604ad8
+version 3.3
