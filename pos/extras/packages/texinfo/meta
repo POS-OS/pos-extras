@@ -1,6 +1,6 @@
-# makeinfo/texi2any (perl, with its XS modules), info (ncurses),
-# install-info.
+# makeinfo/texi2any (perl, with its XS modules, whose libtexinfo uses
+# libunistring), info (ncurses), install-info.
 build-requires pos-link perl
-requires glibc perl ncurses
+requires glibc perl ncurses libunistring
 archive https://ftp.gnu.org/gnu/texinfo/texinfo-7.3.tar.xz 51f74eb0f51cfa9873b85264dfdd5d46e8957ec95b88f0fb762f63d9e164c72e
 version 7.3

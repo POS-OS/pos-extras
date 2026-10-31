@@ -3,3 +3,5 @@ kind host
 host-requires make autoconf automake autoconf-archive libtool m4 pkgconf
 host-requires bison flex gawk gperf texinfo help2man gettext gettext-devel
 host-requires perl python3 git rsync diffutils patch xz bzip2 gzip tar findutils which file
+# Sets the runpaths of programs and libraries (the engine's _pkg_runpath).
+host-requires patchelf

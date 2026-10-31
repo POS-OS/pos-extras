@@ -1,0 +1,6 @@
+# patchelf. The engine's finish step sets the $ORIGIN runpaths of every
+# project outside /pos with it (_pkg_runpath).
+build-requires pos-link
+requires glibc gcc-runtime
+archive https://github.com/NixOS/patchelf/releases/download/0.19.3/patchelf-0.19.3.tar.bz2 20dbe23e9dbc4ad769078a867ad002c04297a069ff93c95fb72242dd55d4dd6f
+version 0.19.3

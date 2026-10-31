@@ -2,5 +2,3 @@
 # and the extras' prefix. gcc is the toolchain reference's.
 kind profile
 requires gcc
-# Sets the runpaths of programs and libraries (the engine's _pkg_runpath).
-host-requires patchelf

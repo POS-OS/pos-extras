@@ -6,7 +6,9 @@ name pos-extras
 # extras' (the engine's BUILD.md "Extras").
 pipeline extras
 # prefix: where the packages install; <version> is <product
-# version>.<revision> of VERSION (the engine's BUILD.md "Prefix").
-prefix /apps/pos-extras/<version>
+# version>.<revision> of VERSION, <release> the build's product release
+# (the engine's BUILD.md "Prefix"): every build has its own, so a build
+# can take its build tools from another (tools setting).
+prefix /apps/pos-extras/<version>-<release>
 # engine: the pos commit whose buildsys/ ./build runs.
-engine 0ceac5ebc1d05c8ad97a8f4e8de477cbe26f1b08
+engine 9272cfb8c9a8b8ade08a8b13aaf2176df978b8ee
