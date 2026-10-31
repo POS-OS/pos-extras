@@ -1,0 +1,6 @@
+# git's manual pages as upstream builds them (asciidoc, which pos-extras
+# does not have), copied into git's tree (git meta with-sources) and
+# installed with it. Same version as git.
+kind source
+archive https://www.kernel.org/pub/software/scm/git/git-manpages-2.56.0.tar.xz 1f62a7fabaa36a0469c4d51fe247d12e7e246b890d2b8b49aec91df610f417c7
+version 2.56.0
