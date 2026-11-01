@@ -1,0 +1,6 @@
+# flit_core, the build backend of flit-built modules (jinja2, packaging,
+# wheel). It builds itself (backend-path).
+build-requires pos-link
+requires python3
+archive https://files.pythonhosted.org/packages/d3/8b/0370578a456986d6995344967a479dd5c9d4e064681550c2a9594bb58b4a/flit_core-4.2.0.tar.gz 84e4e4d8fdd45ba2613800a3ebc6834de26d47ec9746efc3719f94181137b460
+version 4.2.0
