@@ -1,0 +1,8 @@
+# CMake, for the pos recipes that build with it (curl, nghttp2, json-c,
+# jansson, popt). Links pos' curl, expat, zlib, bzip2, xz and zstd;
+# libarchive, libuv, rhash, jsoncpp and cppdap, which pos does not ship,
+# are its bundled copies (build.sh).
+build-requires pos-link
+requires glibc gcc-runtime curl expat zlib bzip2 xz zstd
+archive https://github.com/Kitware/CMake/releases/download/v4.4.5/cmake-4.4.5.tar.gz a0c54c88abb8078dd8eccadb717fc6bb194bf18e7d44c86309910288886e04e2
+version 4.4.5
