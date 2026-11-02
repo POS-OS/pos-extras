@@ -11,4 +11,4 @@ pipeline extras
 # can take its build tools from another (tools setting).
 prefix /apps/pos-extras/<version>-<release>
 # engine: the pos commit whose buildsys/ ./build runs.
-engine 0f9f74cd1fa11c5900456f0256b319ab70ecb87a
+engine c6dddbba11425c3def246d004850b53f1d00d51f
