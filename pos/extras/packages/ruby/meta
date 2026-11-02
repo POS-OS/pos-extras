@@ -1,0 +1,6 @@
+# Ruby, with RubyGems and the bundled gems (rake, irb, rdoc, debug, ...).
+# libruby is shared, found through the runpath. asciidoctor runs it.
+build-requires pos-link libyaml
+requires glibc gcc-runtime libyaml zlib openssl libffi gmp libxcrypt ca-certificates
+archive https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.9.tar.xz a8057adb39f51ad6dc3106237504c93dd792bb515837b4fe7817ae21ed7e51f4
+version 4.0.9

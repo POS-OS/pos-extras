@@ -1,0 +1,5 @@
+# GNU dbm, man-db's index database (its ndbm compatibility library too).
+build-requires pos-link
+requires glibc readline ncurses
+archive https://ftp.gnu.org/gnu/gdbm/gdbm-1.26.tar.gz 6a24504a14de4a744103dcb936be976df6fbe88ccff26065e54c1c47946f4a5e
+version 1.26

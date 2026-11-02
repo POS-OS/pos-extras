@@ -1,0 +1,8 @@
+# Asciidoctor, the AsciiDoc converter (HTML, DocBook, man pages): the man
+# pages of util-linux and cryptsetup are made with it. Pure Ruby, installed
+# as a gem of this prefix's Ruby.
+build-requires pos-link ruby
+requires ruby
+replaces-host-rpm rubygem-asciidoctor
+archive https://github.com/asciidoctor/asciidoctor/archive/refs/tags/v2.0.26.tar.gz 25c22b934bc0ae2448f2d73d4b2eba0c59e0521cf5e893fb0b0ad54a461bf066
+version 2.0.26

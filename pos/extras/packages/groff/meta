@@ -1,0 +1,9 @@
+# GNU roff: nroff, troff and their preprocessors (tbl, eqn, pic, refer),
+# which man formats pages with; also a build tool (gettext's and less'
+# builds run it). Its perl scripts (grog, gropdf, afmtodit) run the
+# extras' perl.
+build-requires pos-link perl
+requires glibc gcc-runtime perl
+replaces-host-rpm groff
+archive https://ftp.gnu.org/gnu/groff/groff-1.24.2.tar.gz f9c1efd5bebbe37fc6e1063db7473ce8df1e3e0be4ff0f43ce04fce57e9c5dd9
+version 1.24.2
