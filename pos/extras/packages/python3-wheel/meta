@@ -2,5 +2,6 @@
 # pip) into its build venv from this python.
 build-requires pos-link python3-flit-core
 requires python3 python3-packaging
+replaces-host-rpm python3-wheel
 archive https://files.pythonhosted.org/packages/d0/20/50ed6bdf27dec98b568a8ae25dc599f35baa3d9709f9e83fd1edb56b9a90/wheel-0.48.0.tar.gz 94800765601e9171bf5d58d066e640662842bcedcbab982b2c90787a2c987322
 version 0.48.0

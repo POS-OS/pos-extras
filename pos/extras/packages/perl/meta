@@ -3,5 +3,6 @@
 # through the runpath.
 build-requires pos-link
 requires glibc libxcrypt zlib
+replaces-host-rpm perl
 archive https://www.cpan.org/src/5.0/perl-5.44.0.tar.xz 505cf43912e9480495c344c70260452e32aa2a73c546a026b3f100053b23ce91
 version 5.44.0

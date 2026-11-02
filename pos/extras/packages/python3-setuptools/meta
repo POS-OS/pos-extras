@@ -2,5 +2,6 @@
 # package. It builds itself (backend-path) and carries its dependencies.
 build-requires pos-link
 requires python3
+replaces-host-rpm python3-setuptools
 archive https://files.pythonhosted.org/packages/70/b3/c19426f783614d625699a4b247faf628ea9ab1db228674491767b417f9e1/setuptools-84.2.1.tar.gz 3ff8b3b5492a0aa66960f4419365a86b84e013070d4313e4d4a6894f5d64d6bc
 version 84.2.1

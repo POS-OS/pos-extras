@@ -2,5 +2,8 @@
 # libunistring), info (ncurses), install-info.
 build-requires pos-link perl
 requires glibc perl ncurses libunistring
+# texinfo-tex: texi2pdf, which gnulib bootstrap checks for; it runs TeX,
+# which the build tools do not have.
+replaces-host-rpm texinfo-tex
 archive https://ftp.gnu.org/gnu/texinfo/texinfo-7.3.tar.xz 51f74eb0f51cfa9873b85264dfdd5d46e8957ec95b88f0fb762f63d9e164c72e
 version 7.3

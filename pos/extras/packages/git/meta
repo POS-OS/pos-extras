@@ -5,5 +5,6 @@
 build-requires pos-link
 with-sources git-manpages
 requires glibc bash zlib openssl curl expat pcre2 perl
+replaces-host-rpm git-core
 archive https://www.kernel.org/pub/software/scm/git/git-2.56.0.tar.xz 26c56c296b38c0695b26fa95f475f1d01704d2d38e73465ca30b0b2f5dc789d3
 version 2.56.0
