@@ -1,0 +1,8 @@
+# GNU Wget2 and libwget, with wget a link to wget2 (Fedora's wget2-wget):
+# a user tool, and the wget of the build tools (gnulib bootstrap fetches
+# translations with it). Links pos' OpenSSL and its trust store, nghttp2,
+# zlib, zstd, xz, bzip2 and pcre2.
+build-requires pos-link
+requires glibc openssl nghttp2 zlib zstd xz bzip2 pcre2
+archive https://ftp.gnu.org/gnu/wget/wget2-2.3.0.tar.gz 4f1915b2a55a789a15f2f9ada7cc44bca81418e648f76fd88a7f4dd028b2149f
+version 2.3.0

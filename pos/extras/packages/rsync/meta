@@ -1,0 +1,6 @@
+# rsync, a user tool. Links pos' acl, attr, zlib, zstd and OpenSSL; popt,
+# which the pos reference does not have, is rsync's included copy.
+build-requires pos-link
+requires glibc acl attr zlib zstd openssl
+archive https://download.samba.org/pub/rsync/src/rsync-3.5.1.tar.gz c55f9c9dc10fb8bec397b399a0fdded53cc9a2d8e30891bb0d63724d25c37bef
+version 3.5.1
