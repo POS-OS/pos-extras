@@ -1,7 +1,9 @@
 # man-db: man, apropos, whatis and mandb, with groff to format pages
 # (man finds the pages of /pos and of this prefix from PATH). It formats
-# pages in a seccomp sandbox (libseccomp), as Fedora's does.
+# pages in a seccomp sandbox (libseccomp), as Fedora's does. Also a build
+# tool: podman's build checks its pages with man -l.
 build-requires pos-link
 requires glibc gdbm libpipeline groff less zlib libseccomp
+replaces-host-rpm man-db
 archive https://download.savannah.nongnu.org/releases/man-db/man-db-2.13.1.tar.xz 8afebb6f7eb6bb8542929458841f5c7e6f240e30c86358c1fbcefbea076c87d9
 version 2.13.1
