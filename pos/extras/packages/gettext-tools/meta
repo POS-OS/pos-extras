@@ -1,8 +1,10 @@
 # GNU gettext's tools: msgfmt, xgettext, msgmerge, autopoint and the
 # gettext m4 macros. pos' gettext (base) is the run-time part only
 # (gettext, ngettext, envsubst); libintl is glibc's. Named apart from it,
-# as packages are known by name across projects.
+# as packages are known by name across projects. Its envsubst is also a
+# build tool (podman writes the paths into its docker script with it).
 build-requires pos-link
 requires glibc libunistring ncurses
+replaces-host-rpm gettext-envsubst
 archive https://ftp.gnu.org/gnu/gettext/gettext-1.0.tar.xz 71132a3fb71e68245b8f2ac4e9e97137d3e5c02f415636eb508ae607bc01add7
 version 1.0
