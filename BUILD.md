@@ -33,6 +33,16 @@ The settings are pos's (`build.conf.dist` of the engine):
 * `pos/build-env`: the host and profile packages, a copy of pos's: the
   Fedora compiler (`gcc-host`), the host tools, and `pos-link`.
 
+## Releases
+The output `app` makes the extras an app archive,
+`pos-extras-app-<stem>.tar.zst` and its manifest
+`pos-extras-app-<stem>.app` (the engine's BUILD.md "App archives"),
+published with the build's reference archive: the tree of
+`/apps/pos-extras/<version>-<release>`. On a machine, `pos-app install`
+installs it and puts its `bin` on `PATH`. It requires the pos release line
+of its pos reference (`os`, the product version) and the gcc-runtime of
+its toolchain reference's gcc or a newer one.
+
 ## Project tiers
 pos-extras depends on pos at runtime, never on pos-sdk; pos-sdk does not
 depend on pos-extras either. A build of any of the three projects runs on
