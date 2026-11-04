@@ -1,0 +1,6 @@
+# Abseil, the C++ library protobuf is written against (protoc's). The
+# version protobuf pins (its cmake/dependencies.cmake), shared.
+build-requires pos-link cmake
+requires glibc gcc-runtime
+archive https://github.com/abseil/abseil-cpp/releases/download/20250512.1/abseil-cpp-20250512.1.tar.gz 9b7a064305e9fd94d124ffa6cc358592eb42b5da588fb4e07d09254aa40086db
+version 20250512.1

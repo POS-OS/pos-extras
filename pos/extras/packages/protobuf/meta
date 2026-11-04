@@ -1,0 +1,8 @@
+# Protocol Buffers: protoc, the compiler netavark's build makes the DHCP
+# proxy's gRPC code with, and libprotobuf and libprotoc, which it links.
+# Against the Abseil of this project (abseil-cpp).
+build-requires pos-link cmake abseil-cpp
+requires glibc gcc-runtime abseil-cpp
+replaces-host-rpm protobuf-compiler
+archive https://github.com/protocolbuffers/protobuf/releases/download/v36.2/protobuf-36.2.tar.gz 3d9642a662d10e68ebae5e53f14dcce5105684212d5078f8e0d47d1ab3ae6b64
+version 36.2
